@@ -1,0 +1,13 @@
+
+.slider{
+  width: 100%;
+  height: 100vh;
+  background-image: url('./Assets/about\ lady.jpeg');
+}
+
+.general-bg{
+  width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
