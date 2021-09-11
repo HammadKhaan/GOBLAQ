@@ -9,13 +9,13 @@ import Image6 from "../Assets/goblaq_autho.png";
 
 const partners = [Image, Image2, Image3, Image4, Image5, Image6];
 
-const contentStyle = {
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+// const contentStyle = {
+//   height: "160px",
+//   color: "#fff",
+//   lineHeight: "160px",
+//   textAlign: "center",
+//   background: "#364d79",
+// };
 
 export const CustomPartner = (props) => {
   return (
@@ -37,15 +37,13 @@ const Partner = () => {
         </Row>
 
         <Row>
-          <Carousel autoplay>
             {partners.map((partner) => (
               <div>
-                <div style={contentStyle}>
+                <div style={{marginLeft: "90px"}}>
                   <CustomPartner img={partner} />
                 </div>
               </div>
             ))}
-          </Carousel>
         </Row>
       </center>
     </div>
