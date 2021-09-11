@@ -1,27 +1,25 @@
 import { Col, Row } from "antd";
 import React from "react";
 import { Card } from "antd";
-import { Button } from 'antd';
+import { Button } from "antd";
 
 //import Image1 from '../Assets/'
 
-const button ={ 
-    backgroundColor: "Red",
-    width: "100%",
-    border: "1px solid red",
-    borderRadius: "5px",
-    fontWeight:"bold",
-
-}
-const browseButton ={ 
-    backgroundColor: "Red",
-    width: "220px",
-    border: "1px solid red",
-    borderRadius: "5px",
-    verticalAlign:"center",
-    fontWeight:"bold",
-
-}
+const button = {
+  backgroundColor: "Red",
+  width: "100%",
+  border: "1px solid red",
+  borderRadius: "5px",
+  fontWeight: "bold",
+};
+const browseButton = {
+  backgroundColor: "Red",
+  width: "230px",
+  border: "1px solid red",
+  borderRadius: "5px",
+  verticalAlign: "center",
+  fontWeight: "bold",
+};
 const { Meta } = Card;
 const images = [
   {
@@ -54,9 +52,10 @@ export const CustomCard = (props) => {
         Nenaji Media
         <br /> <br />
         <Meta title={props.txt} description="Price : $165" />
-        <br/>
-        <Button type="primary" style={button}>VIEW</Button>
-
+        <br />
+        <Button type="primary" style={button}>
+          VIEW
+        </Button>
       </Card>
     </Col>
   );
@@ -64,18 +63,20 @@ export const CustomCard = (props) => {
 
 const Collections = () => {
   return (
-    <div style={{paddingTop:"10px"}}>
+    <div style={{ paddingTop: "10px" }}>
       <center>
-          <h1 style={{fontSize:"50px", fontWeight:"700"}}>Collections</h1>
+        <h1 style={{ fontSize: "50px", fontWeight: "700" }}>Collections</h1>
         <Row>
           {images.map((image) => (
             <CustomCard img={image.pic} txt={image.line} />
           ))}
         </Row>
-        <Row style={{paddingTop:"80px"}}>
-        <Col xs={24} md={24} lg={24}>
-        <Button type="primary" style={browseButton}>BROWSE MORE COLLECTION</Button>
-        </Col>
+        <Row style={{ paddingTop: "80px" }}>
+          <Col xs={24} md={24} lg={24}>
+            <Button type="primary" style={browseButton}>
+              BROWSE MORE COLLECTION
+            </Button>
+          </Col>
         </Row>
       </center>
     </div>

@@ -1,0 +1,5 @@
+ul li {
+  display: inline;
+  margin-left: 20px;
+  font-weight: bold;
+}
